@@ -1,0 +1,17 @@
+{
+  "name": "solanatps",
+  "version": "1.0.0",
+  "description": "solana TPS tracker for NFT-goers",
+  "main": "solanaTPS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fall#1194",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.42.0",
+    "axios": "^0.27.2",
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1"
+  }
+}
