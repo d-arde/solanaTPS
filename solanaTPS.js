@@ -58,7 +58,7 @@ async function getTPS() {
   TPSList = []; // empty list before it is pushed
   TPSList.push(parsedSolTPS.toString()); //pushed as a string because discord status only allows strings
   // console.log(serversBelonging);
-  console.log(TPSList);
+  // console.log(TPSList);
   return TPSList[0];
 }
 
@@ -80,7 +80,7 @@ client.once("ready", () => {
   const getResult = async function () {
     // runs getTPS function asynchrounously
     const result = await getTPS(); //awaits each result of getTPS bcs it is async
-    console.log(result);
+    // console.log(result);
     setTimeout(getResult, 25000); // using this would allow for the function to be ran once, after a 25 second interval. callback is after closing brakcets, so this is done recursively
     client.user.setActivity(result + " TPS (30s)");
   };
