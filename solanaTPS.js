@@ -87,7 +87,7 @@ client.once("ready", () => {
   getResult();
 });
 
-client.login(process.env.DISCORD_LOGIN);
+client.login(process.env.DISCORD_TOKEN);
 
 // bot inv
 // https://discord.com/oauth2/authorize?client_id=976035158866145280&scope=bot&permissions=335544320
